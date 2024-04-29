@@ -5,6 +5,8 @@
     box-sizing: border-box;
     /* font-family: 'poppins', sans-serif; */
 }
+
+
 body{
     color: white;
 }
@@ -135,21 +137,38 @@ body{
     }
 }
 
-.skills {
+/* .skills {
     position: relative;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
-    height: 100vh;
-    /* background: url(/static/img/img11.png); */
-    background-color: #272727;
+    height: 100vh; 
+    background-image: url(/static/img/img11.png); 
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     padding: 70px 7% 0;
-}
+    flex-wrap: wrap;
+    background-attachment: fixed;
+
+}  */
+
+
+ .skills {
+    
+    background-image: url(/static/img/img11.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    padding: 200px 10% 0;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;       
+}  
+
 .card {
     width: 300px;
+    margin: 10px;
     background-color: #84CEEB;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -157,7 +176,7 @@ body{
 }
 
 .card:hover {
-    transform: translateY(-50px);
+    transform: translateY(-10px);
 }
 
 .card-body {
@@ -198,7 +217,9 @@ body{
 
     width: 100%;
     height: 100%;
-    background-color:#5A5560; 
+    background-size: cover;
+    background-position: center;
+    /* background-color:#5A5560;  */
     /* background-color: #5085A5; */
     /* background-color: #53900F; */
     /* background-color: #D6CE15; */
@@ -207,7 +228,7 @@ body{
 }
 .container{
 
-    padding: 70px 10% ;
+    padding: 70px 20% ;
    
 }
 .row{
@@ -272,12 +293,13 @@ body{
     line-height: 50px;
     font-weight: 100;
 }
-/* .contact{
+.contact{
   background-color: #84CEEB;
   width: 100%;
   height: 100%;
-} */
+}
 .container {
+    
     max-width: 800px;
     margin: 100px auto;
     background-color: #bea0a0;
@@ -437,3 +459,50 @@ body{
 
 
 
+
+
+/* Example media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .header,
+    .header1 {
+        padding: 10px; /* Adjust padding for smaller header */
+    }
+
+    .navbar a,
+    .navbar1 a {
+        margin-left: 15px; /* Reduce margin for navigation links */
+    }
+
+    .home-content,
+    .home-sci
+    .btn-box {
+        padding: 30px; /* Adjust padding for home content */
+    }
+    .home {
+        background-position: 0%;
+    }
+   
+
+    .card {
+        width: 100%; 
+        
+    }
+   
+
+    .container {
+        padding: 20px; /* Adjust padding for smaller containers */
+    }
+
+    .contact-info input[type="text"],
+    .contact-info textarea {
+        width: 100%; /* Make input fields full-width */
+    }
+
+    .pro {
+        margin: 50px 10px; /* Adjust margin for smaller screens */
+        
+    }
+    .left-side{
+        padding-top: 100px;   
+    }
+}
