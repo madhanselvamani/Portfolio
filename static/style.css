@@ -470,6 +470,7 @@ body{
 
     .navbar a,
     .navbar1 a {
+        font-size: 14px;
         margin-left: 15px; /* Reduce margin for navigation links */
     }
 
