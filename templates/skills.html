@@ -1,0 +1,40 @@
+
+
+{% include "header.html" %}
+
+<section class="skills">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">AWS</h5>
+            <br>
+            <p class="card-text">Proficient in AWS, adept at deploying and managing cloud infrastructure. Skilled in optimizing performance and ensuring scalability.</p>  
+        </div>
+        <div class="card-link">
+            <a href="{{url_for('aws')}}" class="btn btn-primary">Learn More</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">DevOps</h5>
+            <br>
+            <p class="card-text">Experienced in DevOps principles, focusing on streamlining software development and deployment. Proficient in implementing CI/CD pipelines and automation.</p>
+        </div>
+        <div class="card-link">
+            <a href="{{url_for('devops')}}" class="btn btn-primary">Learn More</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <br>
+            <p class="card-text">Skilled in Python programming, with expertise in web development, data analysis, and automation. Experienced in developing efficient and maintainable code.</p>  
+        </div>
+        <div class="card-link">
+            <a href="{{url_for('python')}}" class="btn btn-primary">Learn More</a>
+        </div>
+    </div>
+</section>
+
+{% include "footer.html" %}
