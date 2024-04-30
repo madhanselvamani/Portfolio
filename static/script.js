@@ -13,4 +13,14 @@ window.addEventListener("scroll", function() {
     }
     prevScrollpos = currentScrollPos;
 });
+// Function to toggle the visibility of the menu
+// Function to toggle the visibility of the menu
+function toggleMenu() {
+    var menu = document.querySelector('.menu');
+    if (menu.style.display === 'none' || menu.style.display === '') {
+        menu.style.display = 'block'; // Show the menu options vertically
+    } else {
+        menu.style.display = 'none'; // Hide the menu options
+    }
+}
 
